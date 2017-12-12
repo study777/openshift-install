@@ -34,6 +34,12 @@ createrepo  /yum-server/epel7/epel/
 
 [https://github.com/openshift/openshift-ansible.git](https://github.com/openshift/openshift-ansible.git)
 
+同步openshift 源到本地
+
+cd /etc/yum.repos.d/
+
+git clone  https://github.com/openshift/openshift-ansible.git
+
 设置  nginx  代理 仓库文件  在配置文件最后 添加一个虚拟主机
 
 vim  /etc/nginx/nginx.conf

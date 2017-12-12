@@ -1,3 +1,6 @@
+准备工作
+
+```
 yum -y install nginx  yum-utils
 
 systemctl start nginx
@@ -8,8 +11,12 @@ mkdir -p /yum-server/7-3-centos
 
 mkdir -p /yum-server/epel7
 
-同步 centos 源到至当前目录
+```
 
+
+
+同步 centos 源到至当前目录
+```
 cd  /yum-server/7-3-centos/
 
 reposync --repoid=base
@@ -23,7 +30,9 @@ createrepo  /yum-server/7-3-centos/base/
 createrepo  /yum-server/7-3-centos/extras/
 
 createrepo  /yum-server/7-3-centos/updates/
+```
 
+```
 同步 epel 源到本地
 
 cd /yum-server/epel7/
@@ -31,29 +40,11 @@ cd /yum-server/epel7/
 reposync --repoid=epel
 
 createrepo  /yum-server/epel7/epel/
-
-[https://github.com/openshift/openshift-ansible.git](https://github.com/openshift/openshift-ansible.git)
+```
 
 同步openshift 源到本地
 ```
-cd /etc/yum.repos.d/
-
-wget https://github.com/openshift/openshift-ansible/archive/release-3.6.zip  -O  openshift-ansible-release-3.6.zip
-
-unzip  openshift-ansible-release-3.6.zip
-
-cp /etc/yum.repos.d/openshift-ansible-release-3.6/roles/openshift_repos/templates/CentOS-OpenShift-Origin36.repo.j2   /etc/yum.repos.d/CentOS-OpenShift-Origin36.repo
-
-
-cp /etc/yum.repos.d/openshift-ansible-release-3.6/roles/openshift_repos/files/origin/gpg_keys/openshift-ansible-CentOS-SIG-PaaS  /etc/pki/rpm-gpg/
-
-cat /etc/yum.repos.d/CentOS-OpenShift-Origin36.repo 
-[centos-openshift-origin36]
-name=CentOS OpenShift Origin
-baseurl=http://mirror.centos.org/centos/7/paas/x86_64/openshift-origin36/
-enabled=1
-gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-PaaS
+yum -y install centos-release-openshift-origin36.noarch
 
 mkdir  /yum-server/openshift/
 
@@ -64,9 +55,25 @@ reposync  --repoid=centos-openshift-origin36
 createrepo  /yum-server/openshift/centos-openshift-origin36
 
 
+```
 
+同步glusterFS 源到本地
 
 ```
+yum -y install centos-release-gluster312.noarch
+
+mkdir  /yum-server/centos-gluster312
+
+cd /yum-server/centos-gluster312/
+
+reposync  --repo=centos-gluster312
+
+createrepo  /yum-server/centos-gluster312/centos-gluster312/
+
+```
+
+
+
 设置  nginx  代理 仓库文件  在配置文件最后 添加一个虚拟主机
 
 vim  /etc/nginx/nginx.conf

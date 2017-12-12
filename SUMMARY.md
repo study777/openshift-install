@@ -1,4 +1,5 @@
-* [1 目录结构](README.md)
+* [目录结构](README.md)
+* [1 主机规划](zhujiguihua.md)
 * [2 操作系统安装及配置](caozuoxitonganzuangjipeizhi.md)
  * [2.5 yum 配置](yum-config.md)
    * [同步rpm到本地](reposync.md)

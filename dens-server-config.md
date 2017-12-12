@@ -68,5 +68,15 @@ glusterfs03        IN   A    172.16.100.228
 devocr             IN   A    172.16.100.229
 
 
+```
 
+
+
+
+
+
+```
+systemctl start named
+
+systemctl enable  named
 ```

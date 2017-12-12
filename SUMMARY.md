@@ -6,6 +6,7 @@
  * [2.6 ntp 服务器搭建](ntp-server-config.md)
    * [服务端配置](ntp-server.md)
    * [客户端配置](ntp-client.md)
+ * [2.7 DNS 服务器搭建](dens-server-config.md)  
 * [3 docker 私有仓库相关配置](docker-私有仓库相关配置.md)
 * [4 glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)
 * [5 openshiftcluster安装](openshiftcluster安装.md)

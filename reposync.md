@@ -54,9 +54,7 @@ server {
 
 设置 yum 仓库权限
 
-\`\`\`
-
+```
 chmod 755 -R  /yum-server
-
-\`\`\`
+```
 

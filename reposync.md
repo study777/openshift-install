@@ -34,8 +34,6 @@ createrepo  /yum-server/7-3-centos/updates/
 
 
 同步 epel 源到本地
-
-
 ```
 
 

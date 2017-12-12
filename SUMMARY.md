@@ -3,6 +3,7 @@
 * [操作系统安装及配置](caozuoxitonganzuangjipeizhi.md)
 * [docker 私有仓库相关配置](docker-私有仓库相关配置.md)
 * [glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)
+* [openshiftcluster安装](openshiftcluster安装.md)
 
 
 

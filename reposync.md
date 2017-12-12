@@ -58,3 +58,7 @@ server {
 chmod 755 -R  /yum-server
 ```
 
+重启nginx 以更新配置文件
+```
+systemctl  restart nginx
+```

@@ -35,11 +35,38 @@ createrepo  /yum-server/epel7/epel/
 [https://github.com/openshift/openshift-ansible.git](https://github.com/openshift/openshift-ansible.git)
 
 同步openshift 源到本地
-
+```
 cd /etc/yum.repos.d/
 
-git clone  https://github.com/openshift/openshift-ansible.git
+wget https://github.com/openshift/openshift-ansible/archive/release-3.6.zip  -O  openshift-ansible-release-3.6.zip
 
+unzip  openshift-ansible-release-3.6.zip
+
+cp /etc/yum.repos.d/openshift-ansible-release-3.6/roles/openshift_repos/templates/CentOS-OpenShift-Origin36.repo.j2   /etc/yum.repos.d/CentOS-OpenShift-Origin36.repo
+
+
+cp /etc/yum.repos.d/openshift-ansible-release-3.6/roles/openshift_repos/files/origin/gpg_keys/openshift-ansible-CentOS-SIG-PaaS  /etc/pki/rpm-gpg/
+
+cat /etc/yum.repos.d/CentOS-OpenShift-Origin36.repo 
+[centos-openshift-origin36]
+name=CentOS OpenShift Origin
+baseurl=http://mirror.centos.org/centos/7/paas/x86_64/openshift-origin36/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-PaaS
+
+mkdir  /yum-server/openshift/
+
+cd /yum-server/openshift/
+
+reposync  --repoid=centos-openshift-origin36
+
+createrepo  /yum-server/openshift/centos-openshift-origin36
+
+
+
+
+```
 设置  nginx  代理 仓库文件  在配置文件最后 添加一个虚拟主机
 
 vim  /etc/nginx/nginx.conf

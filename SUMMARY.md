@@ -1,7 +1,6 @@
-
 * [目录结构](README.md)
 * [操作系统安装及配置](caozuoxitonganzuangjipeizhi.md)
- *[2.5 yum 配置](yum-config.md)
+ * [2.5 yum 配置](yum-config.md)
 * [docker 私有仓库相关配置](docker-私有仓库相关配置.md)
 * [glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)
 * [openshiftcluster安装](openshiftcluster安装.md)

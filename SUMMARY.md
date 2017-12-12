@@ -3,6 +3,7 @@
 * [2 操作系统安装及配置](caozuoxitonganzuangjipeizhi.md)
  * [2.5 yum 配置](yum-config.md)
    * [同步rpm到本地](reposync.md)
+ * [2.6 ntp 服务器搭建](ntp-server-config.md)
 * [3 docker 私有仓库相关配置](docker-私有仓库相关配置.md)
 * [4 glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)
 * [5 openshiftcluster安装](openshiftcluster安装.md)

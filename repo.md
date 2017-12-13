@@ -25,7 +25,7 @@ gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 cat /etc/yum.repos.d/CentOS-OpenShift-Origin.repo 
 [openshift]
 name=openshift
-baseurl=http://172.16.100.249/openshift/centos-openshift-origin36/ 
+baseurl=http://172.16.100.249/openshift/centos-openshift-origin360/ 
 gpgcheck=0
 enabled=1
 ```

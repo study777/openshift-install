@@ -54,8 +54,8 @@ docker tag docker.io/openshift/origin-pod:v3.6.0  registry.paas.com:5000/openshi
 docker push registry.paas.com:5000/openshift/origin-pod:v3.6.0
 
 
-docker tag docker.io/openshift/origin-sti-builder:v3.6.0   registry.paas.como/openshift/origin-sti-builder:v3.6.0
-docker push registry.paas.como/openshift/origin-sti-builder:v3.6.0
+docker tag docker.io/openshift/origin-sti-builder:v3.6.0   registry.paas.com:5000/openshift/origin-sti-builder:v3.6.0
+docker push registry.paas.com:5000/openshift/origin-sti-builder:v3.6.0
 
 
 

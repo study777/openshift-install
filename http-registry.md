@@ -44,6 +44,20 @@ docker push registry.paas.com:5000/openshift/hello-openshift:latest
 docker tag docker.io/centos/mysql-57-centos7:latest   registry.paas.com:5000/centos/mysql-57-centos7:latest 
 docker push registry.paas.com:5000/centos/mysql-57-centos7:latest
 
+docker tag docker.io/openshift/origin-docker-registry:v3.6.0    registry.paas.com:5000/openshift/origin-docker-registry:v3.6.0
+
+docker push registry.paas.com:5000/openshift/origin-docker-registry:v3.6.0
+
+
+
+docker tag docker.io/openshift/origin-pod:v3.6.0  registry.paas.com:5000/openshift/origin-pod:v3.6.0
+docker push registry.paas.com:5000/openshift/origin-pod:v3.6.0
+
+
+docker tag docker.io/openshift/origin-sti-builder:v3.6.0   registry.paas.como/openshift/origin-sti-builder:v3.6.0
+docker push registry.paas.como/openshift/origin-sti-builder:v3.6.0
+
+
 
 
 

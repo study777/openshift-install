@@ -8,12 +8,10 @@ yum -y install unzip
 unzip  openshift-ansible-release-3.6.zip
 
 > /root/openshift-ansible-release-3.6/roles/openshift_repos/templates/CentOS-OpenShift-Origin36.repo.j2
-
 ```
 
-
-
 ### /etc/ansible/hosts
+
 ```
 [OSEv3:children]
 masters
@@ -40,5 +38,7 @@ node09.paas.com
 [nodes]
 node08.paas.com openshift_node_labels="{'region': 'infra', 'zone': 'default'}"
 node09.paas.com openshift_node_labels="{'region': 'primary', 'zone': 'east'}"
-
 ```
+
+
+

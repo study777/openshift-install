@@ -38,6 +38,23 @@ name=epel
 baseurl=http://172.16.100.249/epel7/epel/
 gpgcheck=0
 enabled=1
-
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

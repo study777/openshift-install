@@ -11,6 +11,7 @@
     * [客户端配置](ntp-client.md)
   * [2.7 DNS 服务器搭建](dens-server-config.md)
 * [3 docker 私有仓库相关配置](docker-私有仓库相关配置.md)
+  * [3.3 配置docker本地存储](docker-storage.md)
   * [3.4 docker-distribution 配置 \(第三种方法\)](docker-distribution.md)
     * [http registry](http-registry.md)
 * [4 glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)

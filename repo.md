@@ -32,10 +32,12 @@ enabled=1
 
 ```
 cat /etc/yum.repos.d/epel.repo 
+
 [epel]
 name=epel
 baseurl=http://172.16.100.249/epel7/epel/
 gpgcheck=0
 enabled=1
+
 ```
 

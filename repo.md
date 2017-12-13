@@ -37,7 +37,7 @@ cat /etc/yum.repos.d/epel.repo
 name=epel
 baseurl=http://172.16.100.249/epel7/epel/
 gpgcheck=0
-enabled=1
+enabled=0
 ```
 
 

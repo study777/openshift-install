@@ -50,6 +50,16 @@ alias bond0 bonding
 options bond0 miimon=100 mode=1
 ```
 
+```
+modprobe bonding
+lsmod | grep bonding
+
+systemctl   restart network
+
+reboot
+
+
+```
 
 
 

@@ -57,6 +57,18 @@ reposync  --repoid=centos-openshift-origin36
 createrepo  /yum-server/openshift/centos-openshift-origin36
 
 
+cp -r  centos-openshift-origin36   centos-openshift-origin360
+
+cd centos-openshift-origin360/
+
+rm -rf   *-3.6.1-*
+
+createrepo  .
+
+
+
+
+
 ```
 
 同步glusterFS 源到本地

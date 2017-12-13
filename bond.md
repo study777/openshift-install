@@ -58,7 +58,9 @@ systemctl   restart network
 
 reboot
 
+cat /proc/net/bonding/bond0
 
+Bonding Mode: fault-tolerance (active-backup)
 ```
 
 

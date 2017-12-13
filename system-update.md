@@ -9,5 +9,7 @@ grep enabled  /etc/yum.repos.d/epel.repo
 
 enabled=0
 
+yum -y --enablerepo=epel install ansible pyOpenSSL
+
 
 ```

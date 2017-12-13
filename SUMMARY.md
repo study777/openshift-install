@@ -11,7 +11,7 @@
     * [服务端配置](ntp-server.md)
     * [客户端配置](ntp-client.md)
   * [2.7 DNS 服务器搭建](dens-server-config.md)
-  * [2.8 系统]更新 安装依赖](system-update.md)
+  * [2.8 系统更新 安装依赖](system-update.md)
   * [2.9 Installing Docker](install-docker.md)
   * [2.10 Configuring Docker Storage](config-docker-storage.md)
   * [2.11 config docker registry](config-docker-registry.md)

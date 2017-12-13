@@ -14,6 +14,7 @@
   * [2.8 系统]更新 安装依赖](system-update.md)
   * [2.9 Installing Docker](install-docker.md)
   * [2.10 Configuring Docker Storage](config-docker-storage.md)
+  * [2.11 config host ntp](config-host-ntp.md)
 * [3 docker 私有仓库相关配置](docker-私有仓库相关配置.md)
   * [3.3 配置docker本地存储](docker-storage.md)
   * [3.4 docker-distribution 配置 \(第三种方法\)](docker-distribution.md)

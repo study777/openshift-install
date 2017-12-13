@@ -27,10 +27,10 @@ openshift_release=3.6.0
 openshift_master_default_subdomain=paas.com
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
 openshift_disable_check=memory_availability,disk_availability,docker_storage
-oreg_url=devocr.paas.com/openshift/origin-${component}:${version}
+oreg_url=registry.paas.com:5000/openshift/origin-${component}:${version}
 openshift_examples_modify_imagestreams=true
-openshift_docker_additional_registries=registry.paas.com:5000 ,172.30.0.1/16:5000 
-openshift_docker_insecure_registries=registry.paas.com:5000 ,172.30.0.1/16:5000 
+openshift_docker_additional_registries=registry.paas.com:5000 ,172.30.0.1/16:5000
+openshift_docker_insecure_registries=registry.paas.com:5000 ,172.30.0.1/16:5000
 [masters]
 master07.paas.com
 [etcd]

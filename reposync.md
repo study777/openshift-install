@@ -56,6 +56,9 @@ reposync  --repoid=centos-openshift-origin36
 
 createrepo  /yum-server/openshift/centos-openshift-origin36
 
+删除 3.6.1  的包
+
+cd /yum-server/openshift/
 
 cp -r  centos-openshift-origin36   centos-openshift-origin360
 
@@ -64,9 +67,6 @@ cd centos-openshift-origin360/
 rm -rf   *-3.6.1-*
 
 createrepo  .
-
-
-
 
 
 ```

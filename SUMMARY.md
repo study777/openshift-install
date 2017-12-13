@@ -23,6 +23,7 @@
 * [4 glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)
 * [5 openshiftcluster安装](openshiftcluster安装.md)
   * [5.1 ansible 配置](ansible-config.md)
+  * [5.1  配置主机名](config-hostname.md)
 * [6 S2I自定义镜像制作](S2I自定义镜像制作.md)
 * [7 使用openshift](使用openshift.md)
 

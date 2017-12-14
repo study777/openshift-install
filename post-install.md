@@ -1,1 +1,8 @@
-echo 'NM_CONTROLLED=no'  >>  
+```
+echo 'NM_CONTROLLED=no'  >>  /etc/sysconfig/network-scripts/ifcfg-eth0
+
+echo 'NM_CONTROLLED=no'  >>  /etc/sysconfig/network-scripts/ifcfg-eth1
+
+echo 'NM_CONTROLLED=no'  >>  /etc/sysconfig/network-scripts/ifcfg-bond0 
+
+```

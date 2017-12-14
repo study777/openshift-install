@@ -31,6 +31,7 @@
   * [5.3 ansible 配置](ansible-config.md)
   * [5.4  配置主机名](config-hostname.md)
   * [5.5  start install ](start-install.md)
+  * [5.5  post install ](post-install.md)
 * [6 S2I自定义镜像制作](S2I自定义镜像制作.md)
 * [7 使用openshift](使用openshift.md)
 

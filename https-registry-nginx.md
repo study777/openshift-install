@@ -142,6 +142,7 @@ curl  devocr.paas.com:5000/v2
 ###  docker  pull  on  client
 
 ##### remove  all  local  images
+
 ```
 docker rmi $(docker images -q)  -f
 ```

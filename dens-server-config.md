@@ -2,8 +2,6 @@
 echo 'net.ipv6.conf.all.disable_ipv6 = 1'    >>  /etc/sysctl.conf 
 sysctl  -p
 
-sed -i 's/enforcing/disabled/g'  /etc/selinux/config
-setenforce 0
 
 systemctl stop NetworkManager
 systemctl disable NetworkManager

@@ -17,7 +17,10 @@ node09.paas.com
 
 ```
 
+```
+echo 'nameserver 172.16.100.247'    >   /etc/resolv.conf
 
+```
 
 ssh-keygen -f ~/.ssh/id_rsa -N ''
 

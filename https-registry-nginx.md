@@ -166,6 +166,8 @@ docker pull  devocr.paas.com/openshift/origin-service-catalog:latest
 
 docker pull devocr.paas.com/openshift/origin-docker-registry:v3.6.0
 
+docker pull devocr.paas.com/openshift/origin-pod:v3.6.0
+
 ```
 
 

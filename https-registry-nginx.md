@@ -122,6 +122,8 @@ scp devocr.paas.com:/certs/domain.crt   /etc/docker/certs.d/devocr.paas.com/
 cat /etc/docker/certs.d/devocr.paas.com/domain.crt    >> /etc/pki/tls/certs/ca-bundle.crt
 echo "ADD_REGISTRY='--add-registry devocr.paas.com'"   >> /etc/sysconfig/docker
 
+
+
 systemctl  restart docker
 
 ### curl test on clinet

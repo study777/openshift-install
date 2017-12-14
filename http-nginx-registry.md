@@ -104,3 +104,13 @@ curl https://devocr.paas.com/v2
 
 ```
 
+#### client config
+
+```
+mkdir /etc/docker/certs.d/devocr.paas.com scp devocr.paas.com:/certs/domain.crt
+/etc/docker/certs.d/devocr.paas.com/ cat /etc/docker/certs.d/devocr.paas.com/domain.crt >>
+/etc/pki/tls/certs/ca-bundle.crt echo "ADD_REGISTRY='--add-registry devocr.paas.com'" >>
+/etc/sysconfig/docker
+systemctl restart docker
+
+```

@@ -1,6 +1,8 @@
+## server  config
 
+```
+yum -y install docker-distribution  nginx
 
-yum -y install docker-distribution
 
 systemctl  start docker-distribution
 systemctl  enable  docker-distribution
@@ -8,10 +10,12 @@ systemctl  enable  docker-distribution
 
 curl  172.16.100.247:5000/v2
 <a href="/v2/">Moved Permanently</a>.
+```
 
 
-yum -y instal nginx
-touch  /etc/nginx/conf.d/registry.conf
+
+
+### cat /etc/nginx/conf.d/registry.conf
 
 ```
 upstream docker-registry {  
@@ -98,9 +102,52 @@ Common Name (eg, your name or your server's hostname) []:devocr.paas.com
 Email Address []: Enter
 ```
 
-
-
-
-
+###  test  on  server
+```
 systemctl  start nginx
 systemctl  enable   nginx
+cat /certs/domain.crt    >> /etc/pki/tls/certs/ca-bundle.crt
+curl  https://devocr.paas.com/v2
+<a href="/v2/">Moved Permanently</a>.
+
+```
+
+
+
+
+## client  config
+
+mkdir  /etc/docker/certs.d/devocr.paas.com
+scp devocr.paas.com:/certs/domain.crt   /etc/docker/certs.d/devocr.paas.com/
+cat /etc/docker/certs.d/devocr.paas.com/domain.crt    >> /etc/pki/tls/certs/ca-bundle.crt
+echo "ADD_REGISTRY='--add-registry devocr.paas.com'"   >> /etc/sysconfig/docker
+
+systemctl  restart docker
+
+### curl test on clinet
+curl  https://devocr.paas.com/v2
+<a href="/v2/">Moved Permanently</a>.
+
+
+###  docker  push  on  client
+
+
+
+###  docker  pull  on  client
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

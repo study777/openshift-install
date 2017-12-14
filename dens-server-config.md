@@ -44,6 +44,7 @@ $TTL 3600
 227          IN      PTR         glusterfs02.paas.com.
 228          IN      PTR         glusterfs03.paas.com.
 229          IN      PTR         devocr.paas.com.
+238          IN       PTR            .
 ```
 
 ```
@@ -66,6 +67,7 @@ glusterfs01        IN   A    172.16.100.226
 glusterfs02        IN   A    172.16.100.227
 glusterfs03        IN   A    172.16.100.228
 devocr             IN   A    172.16.100.229
+*                 IN    A    172.16.100.238
 
 
 ```

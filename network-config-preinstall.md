@@ -8,7 +8,7 @@ ONBOOT=yes
 MASTER=bond0
 USERCTL=no
 SLAVE=yes
-NM_CONTROLLED=no
+
 
 
 ```

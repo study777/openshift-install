@@ -1,0 +1,1 @@
+echo 'NM_CONTROLLED=no'  >>  

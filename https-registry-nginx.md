@@ -150,6 +150,9 @@ docker pull devocr.paas.com/heketi/heketi:latest
 
 docker pull devocr.paas.com/openshift/hello-openshift:latest
 
+docker pull devocr.paas.com/cockpit/kubernetes:latest
+
+
 ```
 
 

@@ -20,6 +20,8 @@
   * [3.3 配置docker本地存储](docker-storage.md)
   * [3.4 docker-distribution 配置 \(第三种方法\)](docker-distribution.md)
     * [http registry](http-registry.md)
+    * [https registry 使用nginx 代理](https-registry-nginx.md)
+
 * [4 glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)
 * [5 openshiftcluster安装](openshiftcluster安装.md)
   * [5.1 ansible 配置](ansible-config.md)

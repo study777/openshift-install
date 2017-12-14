@@ -168,6 +168,8 @@ docker pull devocr.paas.com/openshift/origin-docker-registry:v3.6.0
 
 docker pull devocr.paas.com/openshift/origin-pod:v3.6.0
 
+docker pull devocr.paas.com/openshift/origin-sti-builder:v3.6.0
+
 ```
 
 

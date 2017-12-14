@@ -9,6 +9,15 @@ curl 172.16.100.247:5000/v2
 
 ```
 
+create certs
+
+```
+
+```
+
+
+
+
 cat /etc/nginx/conf.d/registry.conf
 
 ```

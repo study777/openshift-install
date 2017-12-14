@@ -19,7 +19,7 @@ curl  172.16.100.247:5000/v2
 
 ```
 upstream docker-registry {  
-  server 172.16.100.247:5000;  
+  server devocr.paas.com:5000;  
 }  
 
 server {  
@@ -58,6 +58,7 @@ server {
   }  
 
 }  
+
 ```
 
 
@@ -128,6 +129,10 @@ systemctl  restart docker
 
 ### curl test on clinet
 curl  https://devocr.paas.com/v2
+<a href="/v2/">Moved Permanently</a>.
+
+
+curl  devocr.paas.com:5000/v2
 <a href="/v2/">Moved Permanently</a>.
 
 

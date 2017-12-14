@@ -15,8 +15,7 @@ curl  172.16.100.247:5000/v2
 
 
 
-### cat /etc/nginx/conf.d/registry.conf
-
+###  cat /etc/nginx/conf.d/registry.conf
 ```
 upstream docker-registry {  
   server devocr.paas.com:5000;  

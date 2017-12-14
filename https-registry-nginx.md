@@ -146,6 +146,8 @@ curl  devocr.paas.com:5000/v2
 ```
 docker rmi $(docker images -q)  -f
 ```
+
+
 ```
 docker pull devocr.paas.com/heketi/heketi:latest
 

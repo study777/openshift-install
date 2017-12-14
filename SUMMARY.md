@@ -17,15 +17,19 @@
   * [2.11 config docker registry](config-docker-registry.md)
   * [2.12 config host ntp](config-host-ntp.md)
 * [3 docker 私有仓库相关配置](docker-私有仓库相关配置.md)
+
   * [3.3 配置docker本地存储](docker-storage.md)
   * [3.4 docker-distribution 配置 \(第三种方法\)](docker-distribution.md)
     * [http registry](http-registry.md)
     * [https registry 使用nginx 代理](https-registry-nginx.md)
 
 * [4 glusterfs、heketi安装配置](glusterfs-heketi安装配置.md)
+
 * [5 openshiftcluster安装](openshiftcluster安装.md)
   * [5.1 ansible 配置](ansible-config.md)
   * [5.1  配置主机名](config-hostname.md)
 * [6 S2I自定义镜像制作](S2I自定义镜像制作.md)
 * [7 使用openshift](使用openshift.md)
+
+
 

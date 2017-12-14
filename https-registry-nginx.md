@@ -141,7 +141,11 @@ curl  devocr.paas.com:5000/v2
 
 ###  docker  pull  on  client
 
+#### remove  all  local  images
 
+docker pull devocr.paas.com/heketi/heketi:latest
+
+docker pull devocr.paas.com/openshift/hello-openshift:latest
 
 
 

@@ -145,6 +145,7 @@ curl  devocr.paas.com:5000/v2
 
 ```
 docker rmi $(docker images -q)  -f
+
 ```
 
 

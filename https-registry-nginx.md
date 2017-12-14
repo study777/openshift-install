@@ -162,6 +162,7 @@ docker pull  devocr.paas.com/openshift/origin-deployer:v3.6.0
 
 docker pull devocr.paas.com/openshift/origin-haproxy-router:v3.6.0
 
+
 ```
 
 

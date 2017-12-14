@@ -157,6 +157,8 @@ docker pull devocr.paas.com/openshift/hello-openshift:latest
 docker pull devocr.paas.com/cockpit/kubernetes:latest
 
 
+docker pull  devocr.paas.com/openshift/origin-deployer:v3.6.0
+
 ```
 
 

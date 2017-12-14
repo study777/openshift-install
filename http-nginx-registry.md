@@ -92,3 +92,14 @@ server {
 }  
 
 ```
+
+#### test on server 
+
+```
+systemctl start nginx
+systemctl enable nginx
+cat /certs/domain.crt >> /etc/pki/tls/certs/ca-bundle.crt
+curl https://devocr.paas.com/v2
+<a href="/v2/">Moved Permanently</a>.
+```
+

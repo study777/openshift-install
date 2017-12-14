@@ -47,7 +47,7 @@ file "paas.com.zone";
 vim /var/named/172.16.100.zone
 
 $TTL 3600
-@             IN        SOA   100.16.172.in-addr.arpa. admin.example.com. (
+@             IN        SOA   100.16.172.in-addr.arpa. admin.paas.com. (
                                  20190520
                                    1H
                                    15M

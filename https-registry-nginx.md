@@ -174,8 +174,28 @@ docker pull devocr.paas.com/openshift/origin-sti-builder:v3.6.0
 
 
 
+```
+cat /etc/docker-distribution/registry/config.yml
+```
 
 
+```
+
+version: 0.1
+log:
+  fields:
+    service: registry
+storage:
+    cache:
+        layerinfo: inmemory
+    filesystem:
+        rootdirectory: /var/lib/registry
+http:
+    addr: :443
+    tls: 
+        certificate: /certs/domain.crt
+        key:        /certs/domain.key
+```
 
 
 

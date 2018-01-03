@@ -3,6 +3,7 @@
 * [目录结构](README.md)
 * [1 主机规划](zhujiguihua.md)
 * [2 操作系统安装及配置](caozuoxitonganzuangjipeizhi.md)
+  * [2.1 kvm虚拟机实验环境](kvm.md)
   * [2.3 双网卡绑定](bond.md)
   * [2.5 yum 配置](yum-config.md)
     * [私有yum 仓库搭建](reposync.md)

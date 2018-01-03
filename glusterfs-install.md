@@ -23,6 +23,7 @@ baseurl=http://172.16.100.249/7-3-centos/extras/
 gpgcheck=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
 ```
+
 ### gluster 源  CentOS-Gluster-3.12.repo
 
 ```
@@ -34,20 +35,24 @@ enabled=1
 gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Storage
 ```
 
-
-
-echo 'net.ipv6.conf.all.disable_ipv6 = 1'    >>  /etc/sysctl.conf 
-sysctl  -p
-systemctl stop NetworkManager
-systemctl disable NetworkManager
-systemctl  disable  firewalld
-systemctl   stop   firewalld.service
-sed -i 's/enforcing/disabled/g'  /etc/selinux/config
-setenforce 0
-sed -i 's/#AddressFamily any/AddressFamily inet/g'   /etc/ssh/sshd_config
+echo 'net.ipv6.conf.all.disable\_ipv6 = 1'    &gt;&gt;  /etc/sysctl.conf   
+sysctl  -p  
+systemctl stop NetworkManager  
+systemctl disable NetworkManager  
+systemctl  disable  firewalld  
+systemctl   stop   firewalld.service  
+sed -i 's/enforcing/disabled/g'  /etc/selinux/config  
+setenforce 0  
+sed -i 's/\#AddressFamily any/AddressFamily inet/g'   /etc/ssh/sshd\_config  
 sed -i 's/\#UseDNS yes/UseDNS no/g'   /etc/ssh/sshd\_config  
 systemctl  restart sshd
 
 
+
+## 安装
+
+```
 yum install xfsprogs glusterfs-server  glusterfs glusterfs-fuse -y
 
+yum install heketi heketi-client -y
+```

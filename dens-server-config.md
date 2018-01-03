@@ -12,9 +12,7 @@ sed -i 's/enforcing/disabled/g'  /etc/selinux/config
 setenforce 0
 
 sed -i 's/#AddressFamily any/AddressFamily inet/g'   /etc/ssh/sshd_config
-
 ```
-
 
 ```
 yum -y install bind*
@@ -41,7 +39,6 @@ type master;
 file "paas.com.zone";
 };
 ```
-
 
 ```
 vim /var/named/172.16.100.zone
@@ -86,17 +83,13 @@ glusterfs02        IN   A    172.16.100.227
 glusterfs03        IN   A    172.16.100.228
 devocr             IN   A    172.16.100.229
 *                 IN    A    172.16.100.238
-
-
 ```
-
-
-
-
-
 
 ```
 systemctl start named
 
 systemctl enable  named
 ```
+
+
+

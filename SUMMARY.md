@@ -27,6 +27,7 @@
    * [4.1 glusterfs简介及安装配置](g4-1.md)
      * [4.11 glusterfs 卷类型](g4-1-1.md)
      * [4.12 glusterfs 安装](glusterfs-install.md)
+   * [4.2 heketi安装配置](heketi.md)
 * [5 openshiftcluster安装](openshiftcluster安装.md)
   * [5.1 network config preinstall ](network-config-preinstall.md)
   * [5.2 config private registry](private-registry-config.md)
